@@ -10,5 +10,5 @@ xiaomi.on('ready', () => {
 xiaomi.on('message', (msg) => {
     //xiaomi.playSound(12);
     //xiaomi.setColor({intensity:20, r:0, g:255, b:0});
-    console.log(JSON.stringify(msg));
+    console.log((new Date).toLocaleTimeString() + '' + JSON.stringify(msg));
 });
